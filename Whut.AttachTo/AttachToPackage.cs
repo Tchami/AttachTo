@@ -27,6 +27,8 @@ namespace Whut.AttachTo
             OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
 
             this.AddAttachToCommand(mcs, PkgCmdIDList.cmdidWhutAttachToForsikringNet, gop => gop.ShowAttachToForsikringNet, "Forsikring.Net.exe");
+            this.AddAttachToCommand(mcs, PkgCmdIDList.cmdidWhutAttachToHost, gop => gop.ShowAttachToHost, "edl_netservice_servertalis_service_host.exe", "edl_netexe_servertalis_job_executer_slave.exe");
+            this.AddAttachToCommand(mcs, PkgCmdIDList.cmdidWhutAttachToServer, gop => gop.ShowAttachToServer, "edl_netservice_servertalis_server.exe");
             this.AddAttachToCommand(mcs, PkgCmdIDList.cmdidWhutAttachToNUnit, gop => gop.ShowAttachToNUnit, "nunit-agent.exe", "nunit.exe", "nunit-console.exe", "nunit-agent-x86.exe", "nunit-x86.exe", "nunit-console-x86.exe");
         }
 
