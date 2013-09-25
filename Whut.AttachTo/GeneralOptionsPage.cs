@@ -7,22 +7,15 @@ namespace Whut.AttachTo
     {
         public GeneralOptionsPage()
         {
-            this.ShowAttachToIIS = true;
-            this.ShowAttachToIISExpress = true;
+            this.ShowAttachToForsikringNet = true;
             this.ShowAttachToNUnit = true;
         }
 
         [Category("General")]
-        [DisplayName("Show 'Attach to IIS' command")]
-        [Description("Show 'Attach to IIS' command in Tools menu.")]
+        [DisplayName("Show 'Attach to Forsikring.Net' command")]
+        [Description("Show 'Attach to Forsikring.Net' command in Tools menu.")]
         [DefaultValue(true)]
-        public bool ShowAttachToIIS { get; set; }
-
-        [Category("General")]
-        [DisplayName("Show 'Attach to IIS Express command")]
-        [Description("Show 'Attach to IIS Express command in Tools menu.")]
-        [DefaultValue(true)]
-        public bool ShowAttachToIISExpress { get; set; }
+        public bool ShowAttachToForsikringNet { get; set; }
 
         [Category("General")]
         [DisplayName("Show 'Attach to NUnit' command")]

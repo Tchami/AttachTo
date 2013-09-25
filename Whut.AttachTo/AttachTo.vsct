@@ -55,23 +55,13 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node or set it to <Icon guid="guidOfficeIcon" id="msotcidNoIcon" /> -->
-      <Button guid="guidAttachToCmdSet" id="cmdidWhutAttachToIIS" priority="0x0100" type="Button">
+      <Button guid="guidAttachToCmdSet" id="cmdidWhutAttachToForsikringNet" priority="0x0100" type="Button">
         <Parent guid="guidAttachToCmdSet" id="WhutAttachToMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
-          <CommandName>cmdidWhutAttachToIIS</CommandName>
-          <ButtonText>Attach to IIS</ButtonText>
-        </Strings>
-      </Button>
-      
-      <Button guid="guidAttachToCmdSet" id="cmdidWhutAttachToIISExpress" priority="0x0100" type="Button">
-        <Parent guid="guidAttachToCmdSet" id="WhutAttachToMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
-        <CommandFlag>DynamicVisibility</CommandFlag>
-        <Strings>
-          <CommandName>cmdidWhutAttachToIISExpress</CommandName>
-          <ButtonText>Attach to IIS Express</ButtonText>
+          <CommandName>cmdidWhutAttachToForsikringNet</CommandName>
+          <ButtonText>Attach to Forsikring.Net</ButtonText>
         </Strings>
       </Button>
       
@@ -104,8 +94,7 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidAttachToCmdSet" value="{16e2ac5c-ec3d-4ff1-a237-11ccef54fe0f}">
       <IDSymbol name="WhutAttachToMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdidWhutAttachToIIS" value="0x0100" />
-      <IDSymbol name="cmdidWhutAttachToIISExpress" value="0x0101" />
+      <IDSymbol name="cmdidWhutAttachToForsikringNet" value="0x0100" />
       <IDSymbol name="cmdidWhutAttachToNUnit" value="0x0102" />
     </GuidSymbol>
     
